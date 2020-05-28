@@ -1,0 +1,8 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xtrmdarc/js-restaurant-page.git",
+  "author": "xtrmdarc <diegoreyesco@hotmail.com>",
+  "license": "MIT"
+}
