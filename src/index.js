@@ -1,2 +1,4 @@
+import './styles.css';
+import { renderHome } from './home.js';
 
-console.log('Hello world');
+renderHome();
