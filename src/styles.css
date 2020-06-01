@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+p, span {
+  font-family: 'PT Sans', sans-serif;  
+}
+
+#content {
+  height: 100%;
+}
+
+.main-section {
+  background-image: url('./meat-burguer-hero.jpg');
+  background-position-y: -100px;
+  background-size: cover;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.main-section header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0 15px;
+}
+
+.main-section header nav .logo-wrapper {
+  width: 18%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper .logo {
+  width: 150px;
+}
+
+.main-section header nav .nav-wrapper {
+  width: 82%;
+  display: flex;
+  border-bottom: 1px solid rgba(253, 253, 253, 0.425);
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.main-section header nav li {
+  display: inline;
+}
+
+.main-section header nav .menu-item {
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.main-section .main-info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-section .main-info h1 {
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-size: 80px;
+}
+
+.features {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(241, 241, 241);
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+.feature h3 {
+  color: #db282e;
+}
