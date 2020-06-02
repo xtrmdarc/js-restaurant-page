@@ -20,6 +20,9 @@
   "homepage": "https://github.com/xtrmdarc/js-restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^3.5.3",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "file-loader": "^6.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
