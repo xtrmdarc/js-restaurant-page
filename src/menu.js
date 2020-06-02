@@ -1,11 +1,14 @@
-import LogoImg from './diego_kings_logo.png';
+import BurgMenu from './meat-burguer-menu.png';
 
-const renderHome = () => {
+const renderMenu = () => {
   const content = document.querySelector('#content');
-
+  const menu_section = document.createElement('div');
+  menu_section.classList.add('menu-section');
+  content.appendChild(menu_section);
+  
   const main_content = document.createElement('div');
   main_content.classList.add('main-section');
-  content.appendChild(main_content);
+  menu_section.appendChild(main_content);
   
   const header = document.createElement('header');
   main_content.appendChild(header);
@@ -17,10 +20,10 @@ const renderHome = () => {
   logo_wrapper.classList.add('logo-wrapper');
   nav.appendChild(logo_wrapper);
   
-  const logo_img = document.createElement('img');
-  logo_img.src = LogoImg;
-  logo_img.classList.add('logo');
-  logo_wrapper.appendChild(logo_img);
+  // const logo_img = document.createElement('img');
+  // logo_img.src = LogoImg;
+  // logo_img.classList.add('logo');
+  // logo_wrapper.appendChild(logo_img);
   
   const nav_wrapper = document.createElement('div');
   nav_wrapper.classList.add('nav-wrapper');
@@ -66,29 +69,38 @@ const renderHome = () => {
   li_search.textContent = 'Search';
   ul_r.appendChild(li_search);
   
-  const main_info = document.createElement('div');
-  main_info.classList.add('main-info');
-  main_info.innerHTML = ` <h1>CRAZY DELICIOUS BURGERS</h1>
-  <p>Handmade burgers will make re think the concept of how a burger shoud test like</p>`;
-  main_content.appendChild(main_info);
+  const menu = document.createElement('div');
+  menu.classList.add('menu');
+  main_content.appendChild(menu);
+
+  const menu_info = document.createElement('div');
+  menu_info.classList.add('menu-info');
+  menu_info.innerHTML = `<h1>Beef burguer</h1>
+  <p>Incredible Handmade burger.</p>
+  <h2> <b>8 USD </b> </h2>
+  <button> <b> ADD TO CART </b> </button>`;
+  menu.appendChild(menu_info);
+
+  const display_pres = document.createElement('div');
+  display_pres.classList.add('display-presentation');
+  display_pres.innerHTML = `<img class="show-dish" src="${BurgMenu}" alt="" >
+  <div class="next-prev">
+    <span> &#9664; PREV  </span>
+    <span>  NEXT &#9658;</span>
+  </div>`;
+  menu.appendChild(display_pres);
+
+  const display_cat = document.createElement('div');
+  display_cat.classList.add('display-category');
+  display_cat.innerHTML = `<ul class="scroll-cat">
+  <li> &uarr; </li>
+  <li> PIZZA </li>
+  <li> <b> BURGERS </b></li>
+  <li> DESSERT </li>
+  <li> &darr; </li>
+</ul>`;
+  menu.appendChild(display_cat);
   
-  const features_section = document.createElement('div');
-  features_section.innerHTML = `<section class="features">
-    <div class="feature">
-      <h3 class="feature-title">fast delivery</h3>
-      <p class="description">Everything you order on Diego's Kings will be quickly delivered!</p>
-    </div>
-    <div class="feature">
-      <h3 class="feature-title">fresh food</h3>
-      <p class="description">We use the best ingredients to cook the best freshfood for you</p>
-    </div>
-    <div class="feature">
-      <h3 class="feature-title">food variety</h3>
-      <p class="description">In our menu you'll find a wide variety of Pizza, Crisped and Dessert</p>
-    </div>
-  </section>`;
-  
-  content.appendChild(features_section);
 }
 
-export default renderHome;
+export default renderMenu;
