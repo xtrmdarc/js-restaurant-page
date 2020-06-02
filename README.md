@@ -16,7 +16,7 @@
 
 [Live Demo Version](https://rawcdn.githack.com/xtrmdarc/js-restaurant-page/4b543c524323cc75876791a2f3d22203d03aa198/dist/index.html)
 
-## Authors
+## Author
 
 👤 **Diego Antonio Reyes Coronado**
 
