@@ -1,4 +1,4 @@
-import BurgMenu from './meat-burguer-menu.png';
+import BurgMenu from './meat-burguer-menu-shadow.png';
 
 const renderMenu = () => {
   const content = document.querySelector('#content');
@@ -35,7 +35,7 @@ const renderMenu = () => {
   display_cat.innerHTML = `<ul class="scroll-cat">
   <li> &uarr; </li>
   <li> PIZZA </li>
-  <li> <b> BURGERS </b></li>
+  <li class="active"> <b> BURGERS </b></li>
   <li> DESSERT </li>
   <li> &darr; </li>
 </ul>`;
