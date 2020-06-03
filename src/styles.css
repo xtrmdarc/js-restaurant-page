@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+p, span, li {
+  font-family: 'PT Sans', sans-serif;  
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section {
+  background-image: url('./meat-burguer-hero.jpg');
+  background-position-y: -100px;
+  background-size: cover;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.main-section header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0 15px;
+}
+
+.main-section header nav .logo-wrapper {
+  width: 18%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper .logo {
+  width: 150px;
+}
+
+.main-section header nav .nav-wrapper {
+  width: 82%;
+  display: flex;
+  border-bottom: 1px solid rgba(253, 253, 253, 0.425);
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.main-section header nav li {
+  display: inline;
+}
+
+.main-section header nav .menu-item {
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.main-section .main-info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-section.contact-page {
+  color: black;
+  height: 100%;
+  background: white;
+}
+
+.main-section.menu-page {
+  color: black;
+  height: 100%;
+  background: white;
+  justify-content: normal;
+}
+
+.main-section .main-info h1 {
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-size: 80px;
+}
+
+.features {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(241, 241, 241);
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px 15px;
+}
+
+.feature h3 {
+  color: #db282e;
+}
+
+.main-section .menu {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu .menu-info {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .menu-info h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.menu .menu-info p {
+  margin: 10px 0;
+  margin-bottom: 50px;
+}
+
+.menu .menu-info h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
+
+.menu .menu-info button {
+  font-size: 15px;
+  background: black;
+  color: white;
+  box-shadow: 0px 10px 15px 1px black;
+  margin-top: 20px;
+}
+
+.menu .display-presentation {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.menu .display-presentation .next-prev span {
+  font-size: 25px;
+}
+
+.menu .display-presentation .show-dish {
+  width: 70%;
+}
+
+.menu-section > * {
+  color: black;
+}
+
+.next-prev {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu .display-category {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu .scroll-cat li {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.menu .scroll-cat li.active {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.contact-page > * {
+  color: black;
+}
+
+.contact-page {
+  height: 100%;
+  max-height: 100%;
+}
+
+.contact-page .contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.contact .img-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact .main-contact {
+  width: 100%;
+  padding: 10px 50px;
+}
+
+.contact .main-contact h1 {
+  font-size: 60px;
+}
+
+.contact .main-contact form textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 4px;
+  border: 1px solid rgba(75, 75, 75, 0.836);
+}
+
+form button {
+  background: black;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+button:hover, .logo:hover {
+  cursor: pointer;
+}
